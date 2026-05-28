@@ -1,0 +1,64 @@
+.choose {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 50vw;
+    height: 5vh;
+    /*background: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose div {
+    flex: 1;
+}
+
+.choose button {
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    height: 10vh;
+    width: 10vw;
+    font-size: 2vw;
+    transition: transform 0.2s ease;
+}
+
+.choose button.agree {
+    background: #00F000;
+}
+
+.choose button.agree:hover {
+    background: #00D000
+}
+
+.choose button.agree:active {
+    background: #00B000;
+}
+
+.choose button.disagree {
+    background: #FF0000;
+}
+
+.choose button.disagree:hover {
+    background: #DD0000;
+}
+
+.choose button.disagree:active {
+    background: #BB0000;
+}
+
+.overlay {
+    position: fixed;      /* 覆盖整个视口 */
+    inset: 0;             /* top/right/bottom/left = 0 */
+    background: rgba(0, 0, 0, 1); /* 半透明遮罩 */
+    display: flex;        /* 居中关键 */
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    font-size: 64px;
+}

@@ -1,0 +1,11 @@
+.dropText {
+    font-size: 2em;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    0% {top: 0;}
+    100% {top: 100vh;}
+}
