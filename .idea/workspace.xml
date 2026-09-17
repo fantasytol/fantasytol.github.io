@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc869944-168f-42c8-9f49-30b2629d6376" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/preview/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aaa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nggyu.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nggyu_black_c.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/nggyu_black_c.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript 调试.index.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -55,6 +59,7 @@
       <recent name="E:\Programming\SelfWork\fantasytol.github.io\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\SelfWork\fantasytol.github.io\preview" />
       <recent name="E:\Programming\SelfWork\fantasytol.github.io\src" />
       <recent name="E:\Programming\SelfWork\fantasytol.github.io" />
     </key>
@@ -67,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789648986792</updated>
-      <workItem from="1789648988081" duration="7242000" />
+      <workItem from="1789648988081" duration="8382000" />
     </task>
     <servers />
   </component>
