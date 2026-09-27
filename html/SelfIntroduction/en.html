@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy · Homepage</title>
+  <meta name="description" content="Fantasy's personal homepage — a university student who loves programming, studying Computer Science at North China University of Technology.">
+  <meta name="author" content="Fantasy">
+  <link rel="icon" href="../../assets/SelfIntroduction/%E5%88%9D%E9%9F%B3.jpg">
+  <link rel="alternate" hreflang="zh-CN" href="zh-cn.html">
+  <link rel="stylesheet" href="../../css/SelfIntroduction/base.css">
+  <link rel="stylesheet" href="../../css/SelfIntroduction/layout.css">
+  <link rel="stylesheet" href="../../css/SelfIntroduction/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ====================== Navigation ====================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top">Fantasy</a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav__list" id="nav-list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="lang-switch" href="zh-cn.html" data-lang="zh-cn" hreflang="zh-CN" lang="zh-CN" title="切换到中文">中文</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open navigation menu">
+          <span class="nav__toggle-bars"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ====================== Hero ====================== -->
+    <section class="section section--hero" id="top">
+      <div class="container hero__grid">
+        <div class="avatar reveal">
+          <img class="avatar__img" src="../../assets/SelfIntroduction/%E5%88%9D%E9%9F%B3.jpg" alt="Fantasy's avatar" width="1024" height="1024">
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">Hi, I am</p>
+          <h1 class="hero__name reveal">Fantasy</h1>
+          <p class="hero__tagline reveal">A university student who loves programming, and likes turning ideas in my head into things that actually run.</p>
+
+          <ul class="hero__meta reveal">
+            <li>Computer Science</li>
+            <li>North China University of Technology, Class of 2026</li>
+            <li>Beijing</li>
+          </ul>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="https://github.com/fantasytol?tab=repositories" target="_blank" rel="noopener">See My Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== About ====================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">About</p>
+          <h2 class="section__title">About Me</h2>
+          <p class="section__desc">A few cards are a quicker way to get to know me than a long paragraph.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="info-card reveal">
+            <p class="info-card__label">School</p>
+            <p class="info-card__value">North China University of Technology</p>
+            <p class="info-card__hint">Class of 2026</p>
+          </div>
+
+          <div class="info-card reveal">
+            <p class="info-card__label">Major</p>
+            <p class="info-card__value">Computer Science</p>
+            <p class="info-card__hint">Known as "CS" for short</p>
+          </div>
+
+          <div class="info-card reveal">
+            <p class="info-card__label">Location</p>
+            <p class="info-card__value">Beijing, China</p>
+            <p class="info-card__hint">Studying here, living here</p>
+          </div>
+
+          <div class="info-card reveal">
+            <p class="info-card__label">Interests</p>
+            <p class="info-card__value">Programming · Driving</p>
+            <p class="info-card__hint">Writing code, and holding the wheel</p>
+          </div>
+
+          <div class="info-card reveal">
+            <p class="info-card__label">Dream Car</p>
+            <p class="info-card__value">Xiaomi SU7 Ultra</p>
+            <p class="info-card__hint">For now it is a dream, but not forever</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Skills ====================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Skills</p>
+          <h2 class="section__title">Skills</h2>
+          <p class="section__desc">Languages I write in, and want to keep getting better at.</p>
+        </div>
+
+        <div class="skills__group reveal">
+          <p class="skills__label">Programming Languages</p>
+          <ul class="tag-list">
+            <li class="tag">C</li>
+            <li class="tag">C++</li>
+            <li class="tag">Rust</li>
+            <li class="tag">Go</li>
+            <li class="tag">Python</li>
+            <li class="tag">Java</li>
+            <li class="tag">TypeScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Projects ====================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Projects</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__desc">Things I have built will live here. My repositories are private for now and will be moved up once they are tidied.</p>
+        </div>
+
+        <div class="projects__grid">
+
+          <!--
+            Project card template: to add a project, copy the block below and remove the comment wrapper.
+            Put images under assets/SelfIntroduction/, and prepare thumbnails in a 16:9 ratio.
+
+            <article class="project-card">
+              <div class="project-card__thumb">
+                <img src="../../assets/SelfIntroduction/project-thumb.jpg" alt="Project screenshot" width="640" height="360">
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Project Name</h3>
+                <p class="project-card__desc">One sentence about what this project does and what problem it solves.</p>
+                <ul class="project-card__tags">
+                  <li class="chip">Language</li>
+                  <li class="chip">Framework</li>
+                </ul>
+                <div class="project-card__links">
+                  <a class="link-arrow" href="https://github.com/fantasytol" target="_blank" rel="noopener">Source</a>
+                  <a class="link-arrow" href="#">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          -->
+
+          <p class="empty-state">Projects are being organized. In the meantime, feel free to browse my GitHub repositories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Contact ====================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Contact Me</h2>
+          <p class="section__desc">Want to talk about code, cars, or just say hi? Reach out anytime.</p>
+        </div>
+
+        <div class="contact__grid">
+          <a class="contact-card reveal" href="https://github.com/fantasytol" target="_blank" rel="noopener">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">github.com/fantasytol</span>
+            </span>
+          </a>
+
+          <a class="contact-card reveal" href="mailto:3311429229@qq.com">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">3311429229@qq.com</span>
+            </span>
+          </a>
+
+          <div class="contact-card reveal">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8V11Z"/></svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">WeChat</span>
+              <span class="contact-card__value">fantasytol</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== Footer ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <nav class="footer__social" aria-label="Social links">
+        <a href="https://github.com/fantasytol" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:3311429229@qq.com">Email</a>
+        <a href="https://github.com/fantasytol?tab=repositories" target="_blank" rel="noopener">Repositories</a>
+      </nav>
+      <p class="footer__copy">Copyright (c) Fantasy</p>
+    </div>
+  </footer>
+
+  <script src="../../js/SelfIntroduction/nav.js" defer></script>
+  <script src="../../js/SelfIntroduction/reveal.js" defer></script>
+</body>
+</html>
