@@ -92,13 +92,13 @@
   gap: 16px;
 }
 
-/* ---- 页脚 ---- */
+/* ---- 页脚：三链接一行，版权在正下方 ---- */
 .footer__inner {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: var(--space-3);
+  text-align: center;
 }
 
 /* ---- 入口页 ---- */
@@ -140,9 +140,4 @@
   .container { padding-inline: 18px; }
 
   .section--hero { min-height: auto; }
-
-  .footer__inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }

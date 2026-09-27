@@ -244,31 +244,6 @@
   font-size: var(--fs-400);
 }
 
-.hero__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 20px;
-  margin-top: var(--space-4);
-  font-family: var(--font-mono);
-  font-size: var(--fs-100);
-  color: var(--color-text-muted);
-}
-
-.hero__meta li {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.hero__meta li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  opacity: 0.8;
-}
-
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -440,6 +415,7 @@
    联系卡片
    -------------------------------------------------------------------------- */
 .contact-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -449,6 +425,43 @@
   border-radius: var(--radius-md);
   transition: transform var(--transition), border-color var(--transition),
               background var(--transition);
+}
+
+/* ---- 右上角复制按钮 ---- */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  opacity: 0.55;
+  transition: opacity var(--transition), color var(--transition),
+              border-color var(--transition), background var(--transition);
+}
+
+.contact-card:hover .copy-btn { opacity: 1; }
+
+.copy-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent-line);
+  background: var(--color-accent-soft);
+}
+
+.copy-btn.is-copied {
+  opacity: 1;
+  color: var(--color-accent);
+  border-color: var(--color-accent-line);
+  background: var(--color-accent-soft);
+}
+
+/* 触屏设备没有 hover，直接常显 */
+@media (hover: none) {
+  .copy-btn { opacity: 0.85; }
 }
 
 .contact-card:hover {
@@ -582,8 +595,7 @@
 
   .nav__link { padding: 12px 14px; }
 
-  .hero__tagline,
-  .hero__meta { justify-content: center; }
+  .hero__tagline { text-align: center; }
 
   .hero__actions { justify-content: center; }
 }
